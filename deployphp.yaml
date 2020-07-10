@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: deployphp
-        image: $registry:$BUILD_NUMBER
+        image: arun92/phphello:BUILD_NUMBER
         ports:
         - containerPort: 80
           protocol: TCP
