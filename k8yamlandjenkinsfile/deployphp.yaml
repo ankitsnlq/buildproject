@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployphp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deployphp
+  template:
+    metadata:
+      labels:
+        app: deployphp
+    spec:
+      containers:
+      - name: deployphp
+        image: arun92/phphello
+        ports:
+        - containerPort: 80
+          protocol: TCP
