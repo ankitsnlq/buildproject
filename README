@@ -1,0 +1,5 @@
+1. Setup 3 ubuntu machines running Nginx or Apache web server with single git repository for a PHP hello world page running. You can use kubernetes.
+
+2. Configure jenkins to deploy changes to the git repository to all three machines to show the update on the 3 backend servers  
+
+3. Configure a dashboard to monitor the access and error logs of the nginx servers to show all the 3 server logs in the same (one) dashboard. 
